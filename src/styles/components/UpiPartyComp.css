@@ -1,0 +1,141 @@
+.upi-party-container {
+  background-color: #fff;
+}
+
+.upi-party-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upi-party-heading h2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #4d3dfe;
+  margin: 0px 0px 4px;
+}
+
+.upi-party-heading p {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1b1b1b;
+  margin: 0px 0px 16px;
+  text-align: center;
+}
+
+.upi-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.upi-image-contanier img {
+  width: 74%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  /* padding: 66px; */
+}
+
+.upi-image-contanier {
+  border: 1px solid #4d3dfe;
+  border-radius: 40px;
+  background-color: #4d3dfe;
+  width: 28%;
+  margin: auto;
+}
+
+.upi-image-contanier h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0px 0px 12px;
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+
+.upi-image-contanier p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.upi-image-jackpot img {
+  width: 74%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  /* padding: 66px; */
+}
+
+.upi-image-jackpot {
+  border: 1px solid #b5ef85;
+  border-radius: 40px;
+  background-color: #b5ef85;
+  width: 28%;
+  margin: auto;
+}
+
+.upi-image-jackpot h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin: 0px 0px 12px;
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+
+.upi-image-jackpot p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1b1b1b;
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.upi-image-gift img {
+  width: 74%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  /* padding: 66px; */
+}
+
+.upi-image-gift {
+  border: 1px solid #e72be7;
+  border-radius: 40px;
+  background-color: #e72be7;
+  width: 28%;
+  margin: auto;
+}
+
+.upi-image-gift h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0px 0px 12px;
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+
+.upi-image-gift p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 30px;
+}

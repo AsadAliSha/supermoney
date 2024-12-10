@@ -1,0 +1,21 @@
+.super-beyond-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.super-beyond-heading h1 {
+  font-size: 96px;
+  font-weight: 700;
+  color: #4d43fe;
+  margin:0px 0px 16px;
+  font-family:'Aneklatin';
+}
+
+.super-beyond-heading p{
+    font-size:32px;
+    font-weight: 400;
+    color:#1B1B1B;
+    font-family:'Aneklatin';
+}

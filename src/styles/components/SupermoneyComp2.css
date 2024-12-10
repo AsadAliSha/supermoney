@@ -1,0 +1,59 @@
+.transaction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../../assets/supermoney-bg-image.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: 100%;
+}
+
+/* .transaction-heading {
+
+} */
+
+.transaction-heading h2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #4d43fe;
+  margin: 0px 0px 8px;
+}
+
+.transaction-heading p {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1b1b1b;
+  margin: 0px 0px 25px;
+  text-align: center;
+}
+
+.transaction-qrscanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dddddd;
+  background-color: #4d43fe;
+  width: 15%;
+  margin: auto;
+  padding:20px;
+  border-radius: 15px;
+  gap: 5px;
+}
+
+.transaction-qrscanner img {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 5px;
+  width: 35%;
+  margin: auto;
+}
+
+.transaction-qrscanner p {
+  text-align: left;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  padding:13px;
+}

@@ -1,0 +1,68 @@
+.supermoney-faq-container {
+  background-color: #fff;
+  /* width: 100%;
+  margin: 0 auto; */
+}
+
+.supermoney-faq-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.supermoney-faq-heading h2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #000;
+  margin: 0px 0px 48px;
+  text-transform: uppercase;
+}
+
+.collapse-container {
+  /* width: 100%;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.caret {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue !important;
+  border-radius: 5px;
+  gap: 20px;
+  /* padding-right: 20px; */
+}
+
+.ant-collapse-item {
+  border: 1px solid #dddddddd;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
+  /* border: none; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.ant-collapse-item .ant-collapse-header {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+.ant-collapse-item .ant-collapse-content-box {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0px 0px 20px;
+  color: #adacbe;
+  width: 80%;
+}
