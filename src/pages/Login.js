@@ -12,7 +12,7 @@ const SignIn = () => {
 
   const onFinish = async (values) => {
     setLoading(true)
-    await dispatch(authLogin(values, navigate))
+     dispatch(authLogin(values, navigate))
     setLoading(false)
   }
 
