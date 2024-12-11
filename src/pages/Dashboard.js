@@ -4,11 +4,13 @@ import UpiPartyComp from '../components/UpiPartyComp'
 import SupermoneyBeyondUPI from '../components/SupermoneyBeyondUPI'
 import SupermoneyFaqComp from '../components/SupermoneyFaqComp'
 import Layout from '../layout/Layout'
+import ScanandPay from '../components/ScanandPay'
 
 const Dashboard = () => {
   return <Layout active={'dashboard'}>
     <SupermoneyComp />
     <SupermoneyComp2 />
+    <ScanandPay/>
     <UpiPartyComp />
     <SupermoneyBeyondUPI />
     <SupermoneyFaqComp />

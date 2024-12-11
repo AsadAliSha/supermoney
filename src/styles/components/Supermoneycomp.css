@@ -1,28 +1,40 @@
 .supermoney-container {
   background-color: #4d43fe;
   height: 100vh;
+  overflow: hidden;
 }
-
+.super-money-middle-section{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
 .supermoney-image img {
-  width: 15%;
+  width: 20%;
+
   margin-top: 20px;
+  transform: translateX(-50%);
 }
 
 .supermoney-heading {
   display: flex;
+  margin-top: -8%;
+  /* margin-top: 100px; */
+  /* border: 4px solid red; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family:"Anek latin";
+
 }
 
 .supermoney-heading h3 {
   font-size: 32px;
   color: rgb(255 255 255);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .supermoney-heading h2 {
-  font-size: 96px;
+  font-size: 130px;
   color: #ffffff;
   font-weight: 700;
   margin: 0px 0px 12px;
@@ -33,17 +45,60 @@
   color: #ffffff;
   margin: 0px 0px 52px;
 }
+.currency-note{
+  position: absolute;
+  /* right: 0; */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+  top:50;
+  right:0;
+  left:0;
+  bottom: 0;
+  overflow: hidden;
+  /* top:100;
+ right: 0; */
+ /* rotate: 50deg; */
+ /* transform: translateX(50%); */
+}
+.currency-note img{
+  transform: translateX(40%);
+width: 25%;
+height: 100%;
+  /* position: absolute; */
 
+}
+.videoTag{
+  height:100%;
+  width:100%;
+  border-radius: 1rem;
+  /* border:2px solid gray; */
+ 
+}
 .supermoney-qrscan {
+ 
+ 
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #dddddd;
-  width: 15%;
+  /* border: 1px solid #dddddd; */
+  width: 18%;
+  border-radius: 1rem;
   margin: auto;
-  padding:15px;
-  border-radius: 15px;
+  padding-left:5px;
+  /* border-radius: 15px; */
   gap: 10px;
+  background: (108deg, #746cfb 5.04%, #4137fa 104.24%);
+  box-shadow: 0 8px 28px 0 rgba(41, 30, 255, .45);
+  backdrop-filter: blur(65px);
+}
+.supermoney-qrscan-content{
+  position:absolute;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  gap:20px
 }
 
 .supermoney-qrscan img {
@@ -56,30 +111,40 @@
   text-align: left;
   font-size: 24px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: "Anek Latin";
 }
 
 .supermoney-iamge-wrapper {
+ 
   display: flex;
-  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 10px; */
 }
 
 .supermoney-iamge-wrapper img {
-  display: flex;
-  justify-content: center;
-  width: 10%;
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 28%;
+  height: auto;
+  transform: translateX(-40%) ;
+  margin-top: -25px
+
 }
 
 .supermoney-iamge-wrapper p {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
-  color: #b9b6f2;
+  font-family: "Anek latin";
+  color:rgb(185 182 242 /1);
+  margin-bottom: 5%;
   /* display: flex;
   justify-content: center;
   align-items: center;
   align-items: center; */
-  margin-top: 50px;
-  margin-bottom: 100px;
-  width: 70%;
-  margin: auto;
+  /* margin-top: 50px; */
+  /* margin-bottom: 100px; */
+  /* width: 70%; */
+  /* margin: auto; */
 }

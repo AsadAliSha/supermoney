@@ -1,0 +1,154 @@
+.scanAndMoney-container {
+    background-color: #4d43fe;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .scanAndMoney-contentContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between
+  }
+  .scanAndPayMobileImage{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+  
+    justify-content:center;
+    padding-right:5rem
+  }
+  .scanAndMoney-image img {
+    width:50%;
+ 
+   height:auto;
+  
+    margin-top: 2rem;
+    transform: translateX(-50%) rotate(60deg);
+  }
+  
+  .scanAndPay-heading {
+    display: flex;
+    margin-left: 5rem;
+   
+    flex-direction: column;
+    line-height: 1;
+    font-family:"Anek latin";
+  
+  }
+  
+  .scanAndPay-heading h3 {
+    font-size: 80px;
+    color: rgb(255 255 255);
+    font-weight: 700;
+    
+
+  }
+  
+  .scanAndPay-heading h2 {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 350;
+    /* margin: 0px 0px 12px; */
+  }
+  
+  /* .scanAndPay-heading p {
+    font-size: 32px;
+    color: #ffffff;
+    margin: 0px 0px 52px;
+  } */
+  .currency-note{
+    position: absolute;
+    /* right: 0; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+    top:50;
+    right:0;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    /* top:100;
+   right: 0; */
+   /* rotate: 50deg; */
+   /* transform: translateX(50%); */
+  }
+  .currency-note img{
+    transform: translateX(40%);
+  width: 25%;
+  height: 100%;
+    /* position: absolute; */
+  
+  }
+  .videoTag{
+    height:100%;
+    width:100%;
+    border-radius: 1rem;
+    /* border:2px solid gray; */
+   
+  }
+  .supermoney-qrscan {
+   
+   
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #dddddd; */
+    width: 18%;
+    border-radius: 1rem;
+    margin: auto;
+    padding-left:5px;
+    /* border-radius: 15px; */
+    gap: 10px;
+    background: (108deg, #746cfb 5.04%, #4137fa 104.24%);
+    box-shadow: 0 8px 28px 0 rgba(41, 30, 255, .45);
+    backdrop-filter: blur(65px);
+  }
+  .supermoney-qrscan-content{
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:20px
+  }
+  
+  .supermoney-qrscan img {
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .supermoney-qrscan p {
+    text-align: left;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Anek Latin";
+  }
+  
+  .supermoney-iamge-wrapper {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+  }
+  
+  .supermoney-iamge-wrapper img {
+   
+    width: 28%;
+    height: auto;
+    transform: translateX(-40%) ;
+    margin-top: -25px
+  
+  }
+  
+  .supermoney-iamge-wrapper p {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Anek latin";
+    color:rgb(185 182 242 /1);
+    margin-bottom: 5%;
+   
+  }
+  

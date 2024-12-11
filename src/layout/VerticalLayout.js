@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import { Layout } from 'antd'
 import { Footer, Header } from 'antd/es/layout/layout'
 // import supermoneylogo from '../assets/super-money-logo.svg'
@@ -20,6 +20,25 @@ import supermoneylogocolor1 from '../assets/super-money-logo-color (1).svg'
 
 const VerticalLayout = ({ children }) => {
   // const dispatch = useDispatch()
+  // const [blurred, setBlurred] = useState(false);
+
+  // useEffect(() => {
+  //   // Handle scroll event
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setBlurred(true);  // Apply blur if the scroll position is greater than 50px
+  //     } else {
+  //       setBlurred(false); // Remove blur if the scroll position is less than 50px
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   // Cleanup event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
   const { Content } = Layout
   // const theme = useSelector((state) => state.theme.theme)
 
@@ -51,9 +70,9 @@ const VerticalLayout = ({ children }) => {
           <MainMenu active={active} />
         </Sider> */}
         <Layout className='site-layout'>
-          <Header className='main-header'>
-            <div className='header-container'>
-              <div className='company-logo'>
+          <Header className='main-header'  >
+            <div className='header-container' >
+              <div className='company-logo'  >
                 <img src={supermoneylogowhite} />
                 <button>
                   <CgMenuRight size='35px' color='#fff' />

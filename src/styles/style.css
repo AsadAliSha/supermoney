@@ -17,6 +17,7 @@
 @import './components/UpiPartyComp.css';
 @import './components/SupermoneyFaqComp.css';
 @import './components/SupermoneyBeyondUPI.css';
+@import './components/ScanAndPay.css';
 
 /* Page CSS */
 @import './pages/login.css';

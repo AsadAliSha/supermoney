@@ -26,15 +26,15 @@
   justify-content: space-between;
   height: 10vh;
   margin-bottom: 10px;
+ 
+  
 }
 .v-layout .company-logo img {
   width: auto;
+  
 }
 
-.company-logo {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .v-layout .company-title {
   font-size: 22px;
@@ -44,10 +44,15 @@
 
 .header-container {
   width: 100%;
+
 }
 
 .main-header {
   background-color: #4d43fe;
+  position: fixed;
+ 
+ 
+  /* border: red 4px solid; */
 }
 
 .company-logo {
