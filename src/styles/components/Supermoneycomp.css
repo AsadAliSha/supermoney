@@ -51,20 +51,22 @@
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
-  top:50;
-  right:0;
-  left:0;
-  bottom: 0;
-  overflow: hidden;
+ top:0;
+ 
+ bottom: 7%;
+  /* left:0;
+  bottom: 0; */
+ right: 0;
   /* top:100;
  right: 0; */
  /* rotate: 50deg; */
  /* transform: translateX(50%); */
 }
 .currency-note img{
-  transform: translateX(40%);
-width: 25%;
-height: 100%;
+ 
+  /* transform: translateX(40%); */
+/* width: 25%;
+height: 100%; */
   /* position: absolute; */
 
 }

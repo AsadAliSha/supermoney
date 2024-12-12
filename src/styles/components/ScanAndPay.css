@@ -56,29 +56,7 @@
     color: #ffffff;
     margin: 0px 0px 52px;
   } */
-  .currency-note{
-    position: absolute;
-    /* right: 0; */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-    top:50;
-    right:0;
-    left:0;
-    bottom: 0;
-    overflow: hidden;
-    /* top:100;
-   right: 0; */
-   /* rotate: 50deg; */
-   /* transform: translateX(50%); */
-  }
-  .currency-note img{
-    transform: translateX(40%);
-  width: 25%;
-  height: 100%;
-    /* position: absolute; */
   
-  }
   .videoTag{
     height:100%;
     width:100%;
