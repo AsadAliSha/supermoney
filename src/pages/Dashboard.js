@@ -5,6 +5,8 @@ import SupermoneyBeyondUPI from '../components/SupermoneyBeyondUPI'
 import SupermoneyFaqComp from '../components/SupermoneyFaqComp'
 import Layout from '../layout/Layout'
 import ScanandPay from '../components/ScanandPay'
+import SuperCard from '../components/SuperCard'
+import SuperDeposit from '../components/SuperDeposit'
 
 const Dashboard = () => {
   return <Layout active={'dashboard'}>
@@ -13,6 +15,8 @@ const Dashboard = () => {
     <ScanandPay/>
     <UpiPartyComp />
     <SupermoneyBeyondUPI />
+    <SuperCard/>
+    <SuperDeposit/>
     <SupermoneyFaqComp />
   </Layout>
 }

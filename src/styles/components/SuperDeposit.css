@@ -1,0 +1,178 @@
+.superDeposit-container {
+    background-color:#ffffff ;
+   
+  }
+  .decoration-images{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between ;
+  }
+  .superDeposit-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap:20px; */
+    /* padding-top: 4rem; */
+    flex-direction: column;
+  }
+  
+  .superDeposit-heading h2 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #4d43fe;
+    font-family: 'Anek latin';
+    margin: 0px 0px 4px;
+  }
+  
+  .superDeposit-heading p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Anek latin';
+    color:#000000;
+    margin: 0px 0px 16px;
+    text-align: center;
+  }
+  
+  .superDeposit-image {
+    padding: 5% 15%; 
+  /* display: flex; */
+    /* border: 3px solid black; */
+    /* justify-content: center;
+    */
+    /* gap: 40px; */
+    /* flex-direction: row;
+     
+    align-items: center;   */
+    /* margin-top:60px;  */
+
+   
+  }
+  /* .glass-image{
+    position:absolute;
+     height:80% !important;
+     width: 60% !important;
+        mix-blend-mode:screen;
+        transform: translateY(12%);
+      
+  } */
+  
+  
+  .superDeposit-image img {
+   height: 100%;
+    /* width:50%;
+    height: 100%; */
+    /* width:100% ;
+    height: 100%; */
+    
+    /* margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 45px; */
+    /* padding: 66px; */
+  }
+  .superDeposit-phonecardimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .superDeposit-image-contanier {
+    border: 1px solid #4d3dfe;
+    border-radius: 40px;
+    background-color: #4d3dfe;
+    width: 28%;
+    margin: auto;
+  }
+  
+  .superDeposit-image-contanier h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    
+    margin: 0px 0px 12px;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 38px;
+  }
+  
+  .superDeposit-image-contanier p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  
+  .superDeposit-image-jackpot img {
+    width: 74%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    /* padding: 66px; */
+  }
+  
+  .superDeposit-image-jackpot {
+    border: 1px solid #b5ef85;
+    border-radius: 40px;
+    background-color: #b5ef85;
+    width: 28%;
+    margin: auto;
+  }
+  
+  .superDeposit-image-jackpot h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1b1b1b;
+    margin: 0px 0px 12px;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 38px;
+  }
+  
+  .superDeposit-image-jackpot p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1b1b1b;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  
+  .superDeposit-image-gift img {
+    width: 74%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    /* padding: 66px; */
+  }
+  
+  .superDeposit-image-gift {
+    border: 1px solid #e72be7;
+    border-radius: 40px;
+    background-color: #e72be7;
+    width: 28%;
+    margin: auto;
+  }
+  
+  .superDeposit-image-gift h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0px 0px 12px;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 38px;
+  }
+  
+  .superDeposit-image-gift p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  

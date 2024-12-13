@@ -1,4 +1,4 @@
-import React, { useEffect,  useRef } from 'react'
+import React,{ useEffect,  useRef } from 'react'
 import Upipartyimage from '../assets/upi-party-1.svg'
 import Upipartyimage1 from '../assets/upi-party-2.webp'
 import Upipartyimage2 from '../assets/upi-party-3.webp'
@@ -12,25 +12,22 @@ const UpiPartyComp = () => {
   const cardsRef = useRef(null);
   
 useEffect(() => {
-  // GSAP animation for the heading when it comes into view
   gsap.from(upiPartyHeadingRef.current, {
-    y: 30,
+    y: -30,
     opacity: 0,
     duration: 1,
-    delay: 1,
+   
     scrollTrigger: {
       trigger: upiPartyHeadingRef.current,
-      start: 'top 80%',  // Trigger when the top of the element is 80% into the viewport
-      end: 'bottom top', // End trigger when the element leaves the top of the viewport
-      scrub: true,        // Sync with scroll position
-             // Run the animation only once when the section first comes into view
+      start: 'top bottom',  
+      end: 'bottom top', 
+      scrub: true,        
     }
   });
   gsap.set('.upi-image-contanier', { x: 0, y: 0 });
-  gsap.set('.upi-image-jackpot', { x: -500, y: -40 });
-  gsap.set('.upi-image-gift', { x: -1000, y: -40 });
+  gsap.set('.upi-image-jackpot', { x: -500, y:-30});
+  gsap.set('.upi-image-gift', { x: -700, y: -40 });
   
-  // ScrollTrigger animation for the overlapping cards
   gsap.to('.upi-image-contanier', {
     x: 0,
     y: 0,
@@ -38,26 +35,27 @@ useEffect(() => {
     opacity: 1,
     duration: 1,
     scrollTrigger: {
-      trigger: cardsRef.current,
-      start: 'top 75%',
+      trigger: '.upi-party-container',
+      start: 'top 80%',
       end: 'bottom top',
-      scrub: true,
-      once: true,
+      // scrub: true,
+      // once: true,
     }
   });
 
-  gsap.to('.upi-image-jackpot', {
+  gsap.to('.upi-image-jackpot',{
     x: 0,
     y: 0,
     zIndex:2,
     opacity: 1,
     duration: 1,
     scrollTrigger: {
-      trigger: cardsRef.current,
-      start: 'top 75%',
+      trigger: ".upi-party-container",
+      start: 'top 80%',
       end: 'bottom top',
-      scrub: true,
-      once: true,
+      
+      // scrub: true,
+      // once: true,
     }
   });
 
@@ -68,39 +66,43 @@ useEffect(() => {
     opacity: 1,
     duration: 1,
     scrollTrigger: {
-      trigger: cardsRef.current,
-      start: 'top 75%',
+      trigger: ".upi-party-container",
+      start: 'top 80%',
       end: 'bottom top',
-      scrub: true,
-      once: true,
+      // scrub: true,
+      // once: true,
     }
   });
-  // GSAP animation for the image cards when they come into view
   gsap.from(cardsRef.current, {
-    y: 50,
+    y: 100,
     opacity: 0,
-    duration: 1,
-    stagger: 1, // Adds a slight delay between each card animation
+    duration: 1 ,
+    stagger: 1, 
     scrollTrigger: {
-      trigger: cardsRef.current,
-      start: 'top 75%',  // Trigger when the top of the element is 75% into the viewport
+      trigger: ".upi-party-container",
+      start: 'top 80%',  
       end: 'bottom top',
       scrub: true,
-      once: true,
+      // once: true,
+      immediateRender: true
     }
   });
 }, []);
 
      
- 
+
 
   return (
     <div className='upi-party-container'>
-      <div className='upi-party-heading' ref={upiPartyHeadingRef}>
+      <div className='upi-party-heading'
+      ref={upiPartyHeadingRef}
+       >
         <h2>The UPI party</h2>
         <p>has only begun. Stay tuned...</p>
       </div>
-      <div className='upi-image' ref={cardsRef}>
+      <div className='upi-image'
+      ref={cardsRef}
+      >
         <div className='upi-image-contanier'>
           <h2>Enjoy partner privileges</h2>
           <p>Special perks & privileges for you with our online & offline partners!</p>

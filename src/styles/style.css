@@ -18,6 +18,8 @@
 @import './components/SupermoneyFaqComp.css';
 @import './components/SupermoneyBeyondUPI.css';
 @import './components/ScanAndPay.css';
+@import './components/SuperCard.css';
+@import './components/SuperDeposit.css';
 
 /* Page CSS */
 @import './pages/login.css';
