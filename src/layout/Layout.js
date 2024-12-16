@@ -4,7 +4,7 @@ import MobileLayout from './MobileLayout'
 const Layout = ({ children, active }) => {
   return (
     <div className='layout'>
-      <VerticalLayout children={children} active={active} />
+      <VerticalLayout children={children} active={active}  />
       <MobileLayout>{children}</MobileLayout>
     </div>
   )

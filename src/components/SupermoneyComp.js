@@ -5,11 +5,14 @@ import StairShape from '../assets/stair-shape.webp'
 import SuperNote from '../assets/note-004.webp'
 import gradientanim from '../assets/gradient-anim.mp4'
 
+import { useHeader } from '../config/Context'; // Import the custom hook
+
 import { Layout } from 'antd'
 // import { useGSAP } from '@gsap/react';
 
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+// import { useBackground } from '../config/Context'
 gsap.registerPlugin(ScrollTrigger)
 
 
@@ -18,7 +21,48 @@ const SupermoneyComp = () => {
   
   const container = useRef(null)
 
-  
+  const { setHeader } = useHeader(); // Get the function to update the header state
+  const componentRef = useRef(null); // Ref to the component
+
+  useEffect(() => {
+    // Create the intersection observer to monitor component visibility
+    const observer = new IntersectionObserver((entries) => {
+      console.log("how many entries???????? ");
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Update the header when the component is in the viewport
+          setHeader({
+            logo: 'white', // Example: change logo to color
+            hamburgerColor: true // Example: hide hamburger menu
+          });
+         
+          
+        } else {
+          console.log("component unmount");
+          
+          // Optionally reset the header state when the component leaves the viewport
+          // setHeader({
+          //   logo: 'white', // Reset to white logo when out of view
+          //   hamburgerColor: true // Show hamburger again
+          // });
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger when 50% of the component is visible
+
+    // Start observing the component
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    // Cleanup the observer on component unmount
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  },[]);
+
+
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -46,7 +90,7 @@ const SupermoneyComp = () => {
 
   return (
     <Layout>
-      <div className='supermoney-container'>
+      <div className='supermoney-container' style={{backgroundColor:'#4d43fe'}} ref={componentRef}>
         <div className='currency-note'>
           <img  ref={container} src={SuperNote} />
         </div>

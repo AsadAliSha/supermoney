@@ -20,6 +20,7 @@
 @import './components/ScanAndPay.css';
 @import './components/SuperCard.css';
 @import './components/SuperDeposit.css';
+@import './components/SuperCash.css';
 
 /* Page CSS */
 @import './pages/login.css';

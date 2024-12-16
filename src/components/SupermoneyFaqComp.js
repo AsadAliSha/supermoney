@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Collapse } from 'antd'
 import { FaCaretRight } from 'react-icons/fa'
+import { useHeader } from '../config/Context';
 
 const SupermoneyFaqComp = () => {
   //   const text = `
@@ -8,9 +9,41 @@ const SupermoneyFaqComp = () => {
   //   Known for its loyalty and faithfulness,
   //   it can be found as a welcome guest in many households across the world.
   // `
+    const { setHeader } = useHeader(); // Get the function to update the header state
+              const componentRef = useRef(null); // Ref to the component
+            
+              useEffect(() => {
+                // Create the intersection observer to monitor component visibility
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      // Update the header when the component is in the viewport
+                      setHeader({
+                        logo: 'color', // Example: change logo to color
+                        hamburgerColor: false // Example: hide hamburger menu
+                      });
+                    } else {
+                      // Optionally reset the header state when the component leaves the viewport
+                      
+                    }
+                  });
+                }, { threshold: 0.6 }); // Trigger when 50% of the component is visible
+            
+                // Start observing the component
+                if (componentRef.current) {
+                  observer.observe(componentRef.current);
+                }
+            
+                // Cleanup the observer on component unmount
+                return () => {
+                  if (componentRef.current) {
+                    observer.unobserve(componentRef.current);
+                  }
+                };
+              },[]);
 
   return (
-    <div className='supermoney-faq-container'>
+    <div className='supermoney-faq-container' ref={componentRef}>
       <div className='supermoney-faq-heading'>
         <h2>Faqs</h2>
       </div>
@@ -20,7 +53,6 @@ const SupermoneyFaqComp = () => {
           defaultActiveKey={['1']}
           expandIconPosition={'end'}
           expandIcon={(p) => {
-            console.log(p)
             return (
               <FaCaretRight
                 size='40px'

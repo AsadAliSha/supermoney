@@ -35,3 +35,15 @@ p {
 .m-20 {
   margin: 20px 0;
 }
+.superCard, .superDeposit, .superCash {
+  opacity: 0;
+  transform: translateY(100px); /* Position the elements off-screen initially */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+} 

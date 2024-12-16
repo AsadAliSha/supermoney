@@ -5,9 +5,44 @@ import Upipartyimage2 from '../assets/upi-party-3.webp'
 
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useHeader } from '../config/Context';
 
 gsap.registerPlugin(ScrollTrigger);
 const UpiPartyComp = () => {
+  
+   const { setHeader } = useHeader(); // Get the function to update the header state
+        const componentRef = useRef(null); // Ref to the component
+      
+        useEffect(() => {
+          // Create the intersection observer to monitor component visibility
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Update the header when the component is in the viewport
+                setHeader({
+                  logo: 'color', // Example: change logo to color
+                  hamburgerColor: false // Example: hide hamburger menu
+                });
+              } else {
+                // Optionally reset the header state when the component leaves the viewport
+                
+              }
+            });
+          }, { threshold: 0.9 }); // Trigger when 50% of the component is visible
+      
+          // Start observing the component
+          if (componentRef.current) {
+            observer.observe(componentRef.current);
+          }
+      
+          // Cleanup the observer on component unmount
+          return () => {
+            if (componentRef.current) {
+              observer.unobserve(componentRef.current);
+            }
+          };
+        },[]);
+
   const upiPartyHeadingRef = useRef(null);
   const cardsRef = useRef(null);
   
@@ -93,7 +128,7 @@ useEffect(() => {
 
 
   return (
-    <div className='upi-party-container'>
+    <div ref={componentRef} className='upi-party-container'>
       <div className='upi-party-heading'
       ref={upiPartyHeadingRef}
        >
