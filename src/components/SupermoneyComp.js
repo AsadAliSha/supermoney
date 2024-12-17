@@ -20,7 +20,9 @@ gsap.registerPlugin(ScrollTrigger)
 const SupermoneyComp = () => {
   
   const container = useRef(null)
-
+//  const imageRef = useRef(null); // Ref to the image
+ const headingRef = useRef(null); // Ref to the image
+//  const decoratorRef = useRef(null); // Ref to the image
   const { setHeader } = useHeader(); // Get the function to update the header state
   const componentRef = useRef(null); // Ref to the component
 
@@ -62,7 +64,7 @@ const SupermoneyComp = () => {
     };
   },[]);
 
-
+ 
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -88,6 +90,14 @@ const SupermoneyComp = () => {
       });
   }, []);
 
+  useEffect(()=>{
+gsap.from("supermoney-heading",{
+  opacity:0,
+  y:200,
+  duration:3,delay:1
+})
+  },[])
+
   return (
     <Layout>
       <div className='supermoney-container' style={{backgroundColor:'#4d43fe'}} ref={componentRef}>
@@ -95,7 +105,7 @@ const SupermoneyComp = () => {
           <img  ref={container} src={SuperNote} />
         </div>
         {/* <div className='super-money-middle-section'> */}
-        <div className='supermoney-image'>
+        <div className='supermoney-image' ref={headingRef}>
           <img src={Qrcoin} />
         </div>
         <div className='supermoney-heading '>

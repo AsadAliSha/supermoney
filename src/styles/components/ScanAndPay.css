@@ -43,7 +43,23 @@
     
 
   }
-  
+  .qrcodeimage {
+    position: absolute; 
+    rotate: 5deg; 
+    right: 90%; 
+    z-index: 1 ;
+    height: 30%;
+    transform: skew(-24deg ,-6deg);
+    margin-bottom:10%;
+    
+  }
+  .holo-light{
+    position: absolute;
+    height:293px;
+    width:368px;
+    transform: rotate(10deg);
+      right: 80%
+  }
   .scanAndPay-heading h2 {
     font-size: 35px;
     color: #ffffff;
